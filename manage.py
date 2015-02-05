@@ -268,4 +268,4 @@ def compile_plugin_translations(plugin):
 
 
 if __name__ == "__main__":
-    manager.run(host='0.0.0.0')
+    manager.run()
