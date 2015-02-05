@@ -29,3 +29,8 @@ build:
     - script:
         name: compile translations
         code: python manage.py compile_translations
+
+    - script:
+        name: added testing
+        code: py.test --cov=flaskbb --cov-report=term-missing tests
+
