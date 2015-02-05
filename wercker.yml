@@ -34,3 +34,15 @@ build:
         name: added testing
         code: py.test --cov=flaskbb --cov-report=term-missing tests
 
+deploy:
+
+  steps:
+    - add-to-known_hosts:
+        hostname: 128.199.74.90
+    - mktemp:
+        envvar: PRIVATEKEY_PATH
+    - create-file:
+        name: write key
+        filename: $PRIVATEKEY_PATH
+        content: $WERCKER_PRIVATE
+        overwrite: true
