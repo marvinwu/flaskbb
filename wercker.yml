@@ -17,7 +17,7 @@ build:
     #     clean_wheel_dir: true A custom script step, name value is used in the UI and the code value contains the 
     # command that get executed
     - script:
-	name: pip install ocverall
+        name: install coveralls
         code: pip install coveralls
 
     - script:
