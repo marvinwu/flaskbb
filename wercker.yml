@@ -25,3 +25,7 @@ build:
         code: |
           echo "python version $(python --version) running"
           echo "pip version $(pip --version) running"
+
+    - script:
+        name: compile translations
+        code: python manage.py compile_translations
