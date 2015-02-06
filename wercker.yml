@@ -51,3 +51,6 @@ deploy:
         code: |
           pwd
           ls -la
+          whoami
+          ifconfig -a
+
