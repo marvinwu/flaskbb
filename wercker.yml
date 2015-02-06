@@ -46,8 +46,7 @@ deploy:
         filename: $PRIVATEKEY_PATH
         content: $WERCKER_PRIVATE
         overwrite: true
-
-   -  script:
+    - script:
         name: stop application
         code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no 128.199.74.90 stop gocities
 
