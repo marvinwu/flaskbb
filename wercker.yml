@@ -48,13 +48,10 @@ deploy:
         overwrite: true
     - script:
         name: do a pwd
-        code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no 128.199.74.90 pwd
+        code: ssh -i $PRIVATEKEY_PATH -l root -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no 128.199.74.90 ifconfig -a
 
     - script:
         name: check where we are
         code: |
-          pwd
-          ls -la
-          whoami
           ifconfig -a
 
