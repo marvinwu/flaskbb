@@ -41,7 +41,7 @@ deploy:
 #        hostname: 128.199.74.90
 
   steps:
-    - wercker/add-to-known_hosts@1.4.0
+    - wercker/add-to-known_hosts@1.4.0 ci-test-2
 
     - mktemp:
         envvar: PRIVATEKEY_PATH
